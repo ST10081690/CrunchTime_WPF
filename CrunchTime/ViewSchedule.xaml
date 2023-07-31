@@ -1,0 +1,23 @@
+﻿<Window x:Class="CrunchTime.ViewSchedule"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CrunchTime"
+        mc:Ignorable="d"
+        Title="" Height="416" Width="614.4">
+    <Grid Background="Gray">
+        <Image Source="/Images/Crunch Logo.png" Margin="-112,218,453,-70.8" />
+
+        <Label Content="Here are your scheduled/recorded study hours:" HorizontalAlignment="Left" Margin="10,37,0,0" VerticalAlignment="Top" FontFamily="MV Boli" FontSize="13" Background="{x:Null}" Foreground="#FFF6F6F6"/>
+        <Button x:Name="done" Content="Exit" HorizontalAlignment="Left" Margin="512,343,0,0" VerticalAlignment="Top" Width="75" Cursor="Hand" FontFamily="MV Boli" Click="Done_Click" Height="25"/>
+        <Label Content="Remaining study hours for each module:" HorizontalAlignment="Left" Margin="345,73,0,0" VerticalAlignment="Top" FontFamily="MV Boli" RenderTransformOrigin="0.592,0.583" Foreground="#FFF6F6F6"/>
+        <Button x:Name="back" Content="Menu" HorizontalAlignment="Left" Margin="523,37,0,0" VerticalAlignment="Top" Width="64" FontFamily="MV Boli" Background="#FFF6F6F6" Click="BackToMenu_Click" Cursor="Hand"/>
+        <Label Content="Return to &#xA;Main Menu:" HorizontalAlignment="Left" Margin="523,0,0,0" VerticalAlignment="Top" Foreground="#FFF6F6F6" FontSize="10"/>
+        <Button x:Name="backToSchedule" Content="Update" HorizontalAlignment="Left" Margin="429,343,0,0" VerticalAlignment="Top" Width="75" FontFamily="MV Boli" Height="25" Click="BackToSchedule_Click"/>
+        <Label Content="Update study hours:" HorizontalAlignment="Left" Margin="312,342,0,0" VerticalAlignment="Top" Foreground="#FFF6F6F6" RenderTransformOrigin="0.948,0.55"/>
+        <DataGrid x:Name="scheduledHours" HorizontalAlignment="Left" Height="192" Margin="22,73,0,0" VerticalAlignment="Top" Width="205" Background="Gray" BorderBrush="White"/>
+        <DataGrid x:Name="remainingHours" HorizontalAlignment="Left" Height="182" Margin="354,107,0,0" VerticalAlignment="Top" Width="205" Background="Gray" BorderBrush="White"/>
+
+    </Grid>
+</Window>

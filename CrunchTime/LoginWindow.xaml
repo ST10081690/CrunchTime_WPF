@@ -1,0 +1,21 @@
+﻿<Window x:Class="CrunchTime.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CrunchTime"
+        mc:Ignorable="d"
+        Title="" Height="320.8" Width="476.8">
+    <Grid Background="Gray">
+        <Image Source="/Images/Crunch Logo.png" Margin="-96,-90,356.6,173.8" />
+
+        <Image Source="/Images/Crunch Logo.png" Margin="-104,-90,273.4,80.2" />
+        <Button x:Name="Login" Content="Login" HorizontalAlignment="Left" Margin="365,241,0,0" VerticalAlignment="Top" Width="83" Cursor="Hand" FontFamily="MV Boli" Height="29" Click="Login_Click"/>
+        <TextBox x:Name="logUsernameText" HorizontalAlignment="Left" Height="23" Margin="205,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Enter your username:" HorizontalAlignment="Left" Margin="77,108,0,0" VerticalAlignment="Top" RenderTransformOrigin="-4.284,0.609" Foreground="#FFF6F6F6"/>
+        <Label Content="Enter your password:" HorizontalAlignment="Left" Margin="77,161,0,0" VerticalAlignment="Top" RenderTransformOrigin="-4.284,0.609" Foreground="#FFF6F6F6"/>
+        <TextBox x:Name="logPasswordText" HorizontalAlignment="Left" Height="23" Margin="205,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="BackToStart" Content="Back" HorizontalAlignment="Left" Margin="20,241,0,0" VerticalAlignment="Top" Width="83" Cursor="Hand" FontFamily="MV Boli" Height="29" Click="BackToStart_Click_1"/>
+
+    </Grid>
+</Window>

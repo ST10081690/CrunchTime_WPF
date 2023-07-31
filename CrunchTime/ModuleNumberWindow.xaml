@@ -1,0 +1,26 @@
+﻿<Window x:Class="CrunchTime.ModuleNumberWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CrunchTime"
+        mc:Ignorable="d"
+        Title="" Height="380.4" Width="556.8" BorderBrush="White">
+    <Grid Background="Gray">
+        <Image Source="/Images/Crunch Logo.png" Margin="349,206,-75.6,-38.8" />
+        <Label Content="Enter the number of modules you are saving:" HorizontalAlignment="Left" Margin="19,82,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Semibold" Foreground="#FFF6F6F6"/>
+        <TextBox x:Name="numOfModules" HorizontalAlignment="Left" Height="23" Margin="273,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="toModuleInfo" Content="Next" HorizontalAlignment="Left" Margin="349,298,0,0" VerticalAlignment="Top" Width="102" RenderTransformOrigin="0.66,2.813" Click="ToModuleInfo_Click" Background="White" FontFamily="MV Boli" Cursor="Hand"/>
+        <Label Content="Number of weeks in this semester:" HorizontalAlignment="Left" Margin="19,129,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.648,0" FontFamily="Segoe UI Semibold" Foreground="#FFF6F6F6"/>
+        <TextBox x:Name="weeks" HorizontalAlignment="Left" Height="23" Margin="273,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Enter the start date for this semester: " HorizontalAlignment="Left" Margin="19,178,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Semibold" Foreground="#FFF6F6F6"/>
+        <DatePicker x:Name="semesterStartDate" HorizontalAlignment="Left" Margin="273,180,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Semester Details" HorizontalAlignment="Left" Margin="19,21,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="MV Boli" RenderTransformOrigin="0.518,0.271" Foreground="#FFF6F6F6"/>
+        <Button x:Name="back" Content="Back" HorizontalAlignment="Left" Margin="33,298,0,0" VerticalAlignment="Top" Width="64" FontFamily="MV Boli" Background="#FFF6F6F6" Click="Back_Click" Cursor="Hand"/>
+        <Label Content="Return to &#xD;&#xA;Main Menu:" HorizontalAlignment="Left" Margin="33,261,0,0" VerticalAlignment="Top" Foreground="#FFF6F6F6" FontSize="10"/>
+        <Label x:Name="modNumRequired" Content="*Required" HorizontalAlignment="Left" Margin="398,85,0,0" VerticalAlignment="Top" Foreground="#FFBF0000"/>
+        <Label x:Name="weekNumRequired" Content="*Required" HorizontalAlignment="Left" Margin="398,132,0,0" VerticalAlignment="Top" Foreground="#FFBF0000"/>
+        <Label x:Name="startDtRequired" Content="*Required" HorizontalAlignment="Left" Margin="398,180,0,0" VerticalAlignment="Top" Foreground="#FFBF0000"/>
+
+    </Grid>
+</Window>

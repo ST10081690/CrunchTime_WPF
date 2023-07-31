@@ -1,0 +1,16 @@
+﻿<Window x:Class="CrunchTime.ErrorMessage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CrunchTime"
+        mc:Ignorable="d"
+        Title="" Height="269.189" Width="444.512">
+    <Grid Background="LightGray">
+        <Label Content="[INVALID INPUT]" HorizontalAlignment="Left" Margin="33,32,0,0" VerticalAlignment="Top" FontFamily="MV Boli" Grid.ColumnSpan="2" FontSize="15"/>
+        <Button x:Name="done" Content="OK" HorizontalAlignment="Left" Margin="307,191,0,0" VerticalAlignment="Top" Width="107" Background="#FFF6F6F6" Height="30" FontFamily="MV Boli" Click="done_Click" Cursor="Hand"/>
+        <Label Content="Oops, the input you entered is invalid!&#xD;&#xA;" HorizontalAlignment="Left" Margin="108,84,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Semibold" Width="231"/>
+        <Label x:Name="specificError" Content="Label" HorizontalAlignment="Left" Margin="92,108,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Semibold"/>
+
+    </Grid>
+</Window>
